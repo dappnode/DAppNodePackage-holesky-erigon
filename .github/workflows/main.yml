@@ -26,7 +26,7 @@ jobs:
     name: End to end tests
     steps:
       - uses: actions/checkout@v3
-      - run: npx @dappnode/dappnodesdk@latest github-action test-end-to-end --errorLogsTimeout 120 --healthCheckUrl http://erigon.dappnode:8545 --network mainnet
+      - run: npx @dappnode/dappnodesdk@latest github-action test-end-to-end --errorLogsTimeout 120 --healthCheckUrl http://erigon.dappnode:8545 --network holesky
 
   release:
     name: Release
