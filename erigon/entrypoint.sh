@@ -48,4 +48,5 @@ exec erigon --datadir=${DATADIR} \
     --authrpc.addr 0.0.0.0 \
     --authrpc.vhosts=* \
     --chain=holesky \
+    --db.size.limit=8TB \
     ${EXTRA_OPTs}
