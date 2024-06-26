@@ -4,12 +4,12 @@ services:
     build:
       context: erigon
       args:
-        UPSTREAM_VERSION: v2.57.3
+        UPSTREAM_VERSION: v2.60.2
     ports:
-      - "30406:30406/tcp"
-      - "30406:30406/udp"
+      - 30406:30406/tcp
+      - 30406:30406/udp
     volumes:
-      - "data:/home/erigon/.local/share"
+      - data:/home/erigon/.local/share
     environment:
       P2P_PORT: 30406
       EXTRA_OPTs: "--http.api=engine,eth,erigon,web3,net,debug,trace,txpool"
